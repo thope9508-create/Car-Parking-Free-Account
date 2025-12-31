@@ -14,7 +14,7 @@ body {
   margin: 0;
   min-height: 100vh;
   min-height: 100dvh;
-  background-image: url("https://i.ibb.co/wFfn24NW/3105.webp"); /* ✅ WEBP */
+  background-image: url("https://i.ibb.co/wFfn24NW/3105.webp"); 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -253,7 +253,7 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.ready.then(reg => reg.update());
 
   navigator.serviceWorker.addEventListener("controllerchange", () => {
-    window.location.reload(); // 🔥 REALTIME UPDATE
+    window.location.reload(); 
   });
 }
 </script>
