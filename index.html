@@ -13,6 +13,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("https://i.ibb.co/wFfn24NW/3105.webp"); /* ✅ WEBP */
   background-size: cover;
   background-position: center;
@@ -22,7 +23,17 @@ body {
   font-family: 'Orbitron', sans-serif;
   color: #00ffcc;
 }
-
+  
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  }
+  
 .box {
   position: relative;
   background: linear-gradient(180deg, rgba(10,20,30,.92), rgba(0,0,0,.95));
